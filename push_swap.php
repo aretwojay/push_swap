@@ -74,9 +74,9 @@ if (count($la) > 0 && is_sorted($la) == false)
             do {
                 pick($lb, $la);
                 $result[] = "pa";
-                var_dump("la", $la);
-                var_dump("lb", $lb);
-                sleep(1);	
+                // var_dump("la", $la);
+                // var_dump("lb", $lb);
+                // sleep(1);	
             }
             while (count($lb) > 0);
             break;
@@ -112,9 +112,9 @@ if (count($la) > 0 && is_sorted($la) == false)
                     $key_min = array_search($min, $la);
                     rotate_right($la);
                     $result[] = "rra";
-                    var_dump("la", $la);
-                    var_dump("lb", $lb);
-                    sleep(1);
+                    // var_dump("la", $la);
+                    // var_dump("lb", $lb);
+                    // sleep(1);
                 }
                 while($key_min != count($la) - 1);
             }
@@ -124,17 +124,17 @@ if (count($la) > 0 && is_sorted($la) == false)
                     $key_min = array_search($min, $la);
                     rotate_left($la);
                     $result[] = "ra";
-                    var_dump("la", $la);
-                    var_dump("lb", $lb);
-                    sleep(1);
+                    // var_dump("la", $la);
+                    // var_dump("lb", $lb);
+                    // sleep(1);
                 }
                 while($key_min < 2);
             }
 
         }
-        sleep(1);
-        var_dump("la", $la);
-        var_dump("lb", $lb);
+        // sleep(1);
+        // var_dump("la", $la);
+        // var_dump("lb", $lb);
     }
     echo implode(" ", $result) . PHP_EOL;
 }
@@ -143,4 +143,4 @@ $end_time = microtime(true);
 // Calculate script execution time
 $execution_time = ($end_time - $start_time);
   
-echo " Execution time of script = ".$execution_time." sec" . PHP_EOL;
+// echo " Execution time of script = ".$execution_time." sec" . PHP_EOL;
